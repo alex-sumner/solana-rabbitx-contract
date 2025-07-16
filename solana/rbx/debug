@@ -1,0 +1,194 @@
+(base) ➜  rbx git:(feat/solana_exchange_contract) ✗ anchor test
+    Finished release [optimized] target(s) in 0.19s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.36s
+     Running unittests src/lib.rs (/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/target/debug/deps/rbx-9d7f1ccad7a7f8fa)
+
+Found a 'test' script in the Anchor.toml. Running it as a test suite!
+
+Running test suite: "/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/Anchor.toml"
+
+(node:64933) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Signer wallet address (Ethereum): 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+
+Admin public key: A4niT1r91yWEwddb4coANrrjRtPAgm3jmwqRaZ1Hfeji
+User public key: EaAT5361njgN8e3T5BqpfvUcH5AomvPZ7f6zqqthjj7K
+Timelock authority: CZtPAuY4xJ29r8QXVue3ate47iPJJRgnMzoPR9sL37ve
+State PDA: GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+  RBX Protocol Tests
+Running basic setup...
+Token mint created: FF3BnPLnvhnGHfPPsCsNNpESYt9aeFkG2ZE3FQWXxqKj
+User token account: GHAuLgffyeANKtBmEXXrKd4LYkgPhJy385HahmSH4SjC
+Minted 50 tokens to user
+Initializing program...
+State account exists before initialization: false
+Ethereum address bytes: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Program initialized! Transaction signature: 4kpQuUMPb9pV9BRYNkszrnvaiZaHvvycTMkcNLvDVy1Do9fJ7ZFbCrX7wkAVr8n74fhS5hBnEL9VqzezqhWJhH2S
+withdrawal signer: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+State account size: 2016 bytes
+Verifying contract from program (hex): 0xe158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Supporting wrapped SOL for native deposits...
+Added support for wrapped SOL! Transaction signature: 4Wep5aYFz7TwTjqprBgz3ER7YTeb2qhH1yrx9m4YzfLkLwvjoNQDvK2vHuiJdegJbkztiR2pof1xVz9shhQba6Ci
+Basic setup completed successfully.
+mint: FF3BnPLnvhnGHfPPsCsNNpESYt9aeFkG2ZE3FQWXxqKj
+userTokenAccount: GHAuLgffyeANKtBmEXXrKd4LYkgPhJy385HahmSH4SjC
+Basic setup completed. Mint: FF3BnPLnvhnGHfPPsCsNNpESYt9aeFkG2ZE3FQWXxqKj
+User token account: GHAuLgffyeANKtBmEXXrKd4LYkgPhJy385HahmSH4SjC
+    ✔ Run basic setup tests (2612ms)
+Running deposit tests...
+    ✔ Run deposit tests
+Running deposit and withdrawal tests...
+    ✔ Run withdrawal tests
+
+  deposit operations
+Testing token deposit...
+Program token account: CXdK5G2fq14PxozUYydewBkE9DAnwkWnuJmp2pvu4fSd
+Initial user token balance: 50
+Initial program token balance: 0
+Token deposit successful! Transaction signature: 34xK3PBPJtJsvAN3nbzgKYNPx2sFKnhjXrQLYkeGLgtSa7BEi8DeoibyVx7sVHiTst3D4j9mXvnWNG5MAZ2zzSXd
+Final user token balance: 49
+Final program token balance: 1
+    ✔ Deposits tokens (980ms)
+Testing native SOL deposit...
+Initial user SOL balance: 10 SOL
+Initial program SOL balance: 0 SOL
+SOL deposit successful! Transaction signature: BzaKH1XkVvG69WNEKK9ycShUYuBuaERgy4cFkN76sGevqf6MXZW4GC32PCgRbTEko6yQnwh5wwxwcFmgf3E586x
+Final user SOL balance: 8 SOL
+Final program SOL balance: 2 SOL
+User SOL decreased by: 2 SOL
+Program SOL increased by: 2 SOL
+    ✔ Deposits native SOL (498ms)
+
+  withdrawal operations
+Testing native SOL withdrawal...
+Initial user SOL balance: 8 SOL
+Initial program SOL balance: 2 SOL
+Using Ethereum address bytes: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Wrapped SOL (Solana): So11111111111111111111111111111111111111112
+Trader (Solana): EaAT5361njgN8e3T5BqpfvUcH5AomvPZ7f6zqqthjj7K
+SOL Withdrawal data: {
+  id: 54321,
+  token: PublicKey [PublicKey(So11111111111111111111111111111111111111112)] {
+    _bn: <BN: 69b8857feab8184fb687f634618c035dac439dc1aeb3b5598a0f00000000001>
+  },
+  trader: PublicKey [PublicKey(EaAT5361njgN8e3T5BqpfvUcH5AomvPZ7f6zqqthjj7K)] {
+    _bn: <BN: c9a6c80328a72c1799d983777b9eaf806025a88238826071f148cd1f13f99446>
+  },
+  amount: '1000000000'
+}
+Verifying contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 54321
+Token: So11111111111111111111111111111111111111112
+Trader: EaAT5361njgN8e3T5BqpfvUcH5AomvPZ7f6zqqthjj7K
+Amount: 1000000000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 069b8857feab8184fb687f634618c035dac439dc1aeb3b5598a0f00000000001
+Trader bytes: c9a6c80328a72c1799d983777b9eaf806025a88238826071f148cd1f13f99446
+Withdrawal hash: 0x15d08d089fdcd0e85efeb88dbba196b5cd4b506b10678a8e46c7f9b7a9cbc9d9
+Final digest to sign: 0xc236b121a7c370bda764ef8fc19a4770734e36e6b75885d2d21db21f7b5603c0
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d98815d08d089fdcd0e85efeb88dbba196b5cd4b506b10678a8e46c7f9b7a9cbc9d9
+Signature v: 27
+Signature r: 0xa044b3eadf0951a058970cf3db7222076d9001774612d60e82bab8cc52bc3f95
+Signature s: 0x391c10baac8ff9b7788a66400843a79447ee0249144977185166c54e809be1c2
+Sol account PDA for withdrawal: 8ehMxXXZthqJHuUkCxpHHLfmpTggPo1zbSd6cMHzRgzc
+SOL withdrawal successful! Transaction signature: 5xWPszTEhYCqPXPfZSeYX7LnK4nkeWTTDbLPEmANqxXUEME7Z2KYWeeX4DwmduQrw1YTYRusmppkxBdKTETpUpWt
+Final user SOL balance: 8.99546208 SOL
+Final program SOL balance: 1 SOL
+User SOL increased by: 0.99546208 SOL
+Program SOL decreased by: 1 SOL
+    ✔ Withdraws native SOL with signed EIP712 message (514ms)
+
+
+  6 passing (5s)
+
+(base) ➜  rbx git:(feat/solana_exchange_contract) ✗ npx ts-node scripts/withdraw.ts
+(node:65496) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Starting SOL withdrawal using standard Anchor approach...
+Loading program from chain...
+State PDA: GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Program SOL account: 8ehMxXXZthqJHuUkCxpHHLfmpTggPo1zbSd6cMHzRgzc
+Withdrawing 0.05 SOL...
+Signer wallet address (Ethereum): 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Withdrawal ID: 1743960770
+Initial program balance: 0.72 SOL
+Initial user balance: 0.779975 SOL
+Signing withdrawal data...
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 1743960770
+Token: So11111111111111111111111111111111111111112
+Trader: GaK6K2tvSvZ2Y6pKa4HKRBdYBwovURCtRW4WgPkukT22
+Amount: 50000000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 069b8857feab8184fb687f634618c035dac439dc1aeb3b5598a0f00000000001
+Trader bytes: e767ed42738be9d35b23d24861f6608c684543f85feb8c12b958a6823f2355bb
+Withdrawal hash: 0x249c5d9531f3a611c4b065dfc38f4659e8870cab7cca482e08299b7bd23be9af
+Final digest to sign: 0x78e25517cdb30b662d28cfe49b4496664f4cce3e56319da8eddf732a2688f15e
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d988249c5d9531f3a611c4b065dfc38f4659e8870cab7cca482e08299b7bd23be9af
+Signature v: 28
+Signature r: 0x855f419d18278bfb151b5fb078d5a8ac356d2b2898acada02b0cec8f2d5be0ea
+Signature s: 0x5830b0a3dd0552bd31dbe3c1e79a3c6dee6d9bae51f5864c102549bdcee4469d
+Withdrawal record account: 77PYqFXXMV1TN7cAbEyZeuxRq5FrCnzZVBuTtyuukMWX
+Sending withdrawal transaction...
+❌ Error during withdrawal: AnchorError: AnchorError thrown in programs/rbx/src/lib.rs:625. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature.
+    at Function.parse (/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/node_modules/@coral-xyz/anchor/src/error.ts:152:14)
+    at translateError (/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/scripts/withdraw.ts:107:20) {
+  errorLogs: [
+    'Program log: AnchorError thrown in programs/rbx/src/lib.rs:625. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature.'
+  ],
+  logs: [
+    'Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]',
+    'Program log: Instruction: WithdrawNative',
+    'Program 11111111111111111111111111111111 invoke [2]',
+    'Program 11111111111111111111111111111111 success',
+    'Program log: AnchorError thrown in programs/rbx/src/lib.rs:625. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature.',
+    'Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE consumed 131037 of 200000 compute units',
+    'Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE failed: custom program error: 0x1771'
+  ],
+  error: {
+    errorCode: { code: 'InvalidSignature', number: 6001 },
+    errorMessage: 'Invalid signature',
+    comparedValues: undefined,
+    origin: { file: 'programs/rbx/src/lib.rs', line: 625 }
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE)]]
+    ]
+  }
+}
+Transaction logs: [
+  'Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]',
+  'Program log: Instruction: WithdrawNative',
+  'Program 11111111111111111111111111111111 invoke [2]',
+  'Program 11111111111111111111111111111111 success',
+  'Program log: AnchorError thrown in programs/rbx/src/lib.rs:625. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature.',
+  'Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE consumed 131037 of 200000 compute units',
+  'Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE failed: custom program error: 0x1771'
+]
+
+
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 54321
+Token: So11111111111111111111111111111111111111112
+Trader: EaAT5361njgN8e3T5BqpfvUcH5AomvPZ7f6zqqthjj7K
+Amount: 1000000000
+
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 1743960770
+Token: So11111111111111111111111111111111111111112
+Trader: GaK6K2tvSvZ2Y6pKa4HKRBdYBwovURCtRW4WgPkukT22
+Amount: 50000000

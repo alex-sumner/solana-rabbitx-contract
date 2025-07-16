@@ -1,0 +1,511 @@
+    Finished release [optimized] target(s) in 0.13s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.17s
+     Running unittests src/lib.rs (/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/target/debug/deps/rbx-9d7f1ccad7a7f8fa)
+
+Found a 'test' script in the Anchor.toml. Running it as a test suite!
+
+Running test suite: "/Users/alexandersumner/rabbitx/upgradeable-contracts/solana/rbx/Anchor.toml"
+
+(node:91684) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Signer wallet address (Ethereum): 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+
+Admin public key: 4xhuWMh2yBnP1sdWz1gR87WeAFqLh2aty76XaQhVxCtA
+User public key: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Timelock authority: SWufbvDqZJ4ArLgoGbwvWUjcTxFiAXQ3Fq8LxfNZM6v
+State PDA: GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+  RBX Protocol Tests
+Running basic setup...
+Token mint created: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+User token account: CfFAASg2TRkHoHgjUzTMf33Z5FpgF8mdx1UXtEziCcAS
+Minted 50 tokens to user
+Initializing program...
+State account exists before initialization: false
+Ethereum address bytes: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Program initialized! Transaction signature: 2LNH3JjSvkuQtbYQEvvFaNcmhj6LunsRbCGae4BaiYXa6GMGCku5Ud45pEsaTSpNsF7hf2GWk7f73NCKJmwP86Rj
+withdrawal signer: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+State account size: 2024 bytes
+Verifying contract from program (hex): 0xe158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Supporting wrapped SOL for native deposits...
+Added support for wrapped SOL! Transaction signature: 2wvnMJjXaNEnwLcWSSNDhZC2mAEZM3R2fpqc7pmaYW5hYYqifAjuqVwtYWMRGQYAHsFvR9sMgg3WuJ5N3nDGAAHK
+Basic setup completed successfully.
+mint: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+userTokenAccount: CfFAASg2TRkHoHgjUzTMf33Z5FpgF8mdx1UXtEziCcAS
+Basic setup completed. Mint: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+User token account: CfFAASg2TRkHoHgjUzTMf33Z5FpgF8mdx1UXtEziCcAS
+    ✔ Run basic setup tests (2489ms)
+Running deposit tests...
+    ✔ Run deposit tests
+Running deposit and withdrawal tests...
+    ✔ Run withdrawal tests
+Running timelock operations tests...
+    ✔ Run timelock operation tests
+
+  deposit operations
+Testing token deposit...
+Program token account: FnBaDTS8c4daEYumYrzAZeMubek6SZgtNxDWkwTRiF3Z
+Initial user token balance: 50
+Initial program token balance: 0
+Token deposit successful! Transaction signature: 3KpWhhfcwjNjb6NajvijpjF5nN3vBNqNkETer1oo7vnqc21NBewLJDP8xEHJVwtPeKu1hT7mTcW6Evyq8Z6YW8E2
+Final user token balance: 49
+Final program token balance: 1
+    ✔ Deposits tokens (1003ms)
+Testing native SOL deposit...
+Initial user SOL balance: 10 SOL
+Initial program SOL balance: 0 SOL
+SOL deposit successful! Transaction signature: 2mbzjL8mh7sPiwW2URdptzaRfmydFoFk5PCNsnVZGWP2MTCBPQ5U5oGQ1jdyEWBsxjw7bCi6CzVGjLKNyxjYrAUC
+Final user SOL balance: 8 SOL
+Final program SOL balance: 2 SOL
+User SOL decreased by: 2 SOL
+Program SOL increased by: 2 SOL
+    ✔ Deposits native SOL (583ms)
+
+  withdrawal operations
+Recipient public key: EQJYHWVUB18v3vwzn3h3ypG8fbDZmGCxbUAdwBdaTWUB
+Funded recipient with 1 SOL
+Program token account: FnBaDTS8c4daEYumYrzAZeMubek6SZgtNxDWkwTRiF3Z
+Recipient token account: HkCPPvWhAkf4Pa2C8whV52PWzok89ycWgQFrXpLCNw4R
+Withdrawal data: {
+  id: 12345,
+  token: PublicKey [PublicKey(79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3)] {
+    _bn: <BN: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e>
+  },
+  trader: PublicKey [PublicKey(EQJYHWVUB18v3vwzn3h3ypG8fbDZmGCxbUAdwBdaTWUB)] {
+    _bn: <BN: c7201ed9486b6a130af4bb715a0ef9030b71aaf512705c72624bd40b63c0d45c>
+  },
+  amount: '500000'
+}
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 12345
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: EQJYHWVUB18v3vwzn3h3ypG8fbDZmGCxbUAdwBdaTWUB
+Amount: 500000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: c7201ed9486b6a130af4bb715a0ef9030b71aaf512705c72624bd40b63c0d45c
+Withdrawal hash: 0x9b9e247b06ea4f9a4ff0a9e4caef16a9e6461d6dd236feeb91c096bf4fd8f516
+Final digest to sign: 0xf18bb0050be5f0f1f882c4b1088a5e1aadd1df780da8b85fa89bad8cdd2a3ef1
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d9889b9e247b06ea4f9a4ff0a9e4caef16a9e6461d6dd236feeb91c096bf4fd8f516
+Signature v: 27
+Signature r: 0xfb23c99320b774fef9d116d7b176f86183f8bff3c29b1beafa320e7b181c791a
+Signature s: 0x6665c4ef29e01d0d90689a6ab34306ed28e51804a00502d3a0f25afb18bc1352
+Withdrawal signature obtained. v: 27 r: Uint8Array(32) [
+  251,  35, 201, 147,  32, 183, 116,
+  254, 249, 209,  22, 215, 177, 118,
+  248,  97, 131, 248, 191, 243, 194,
+  155,  27, 234, 250,  50,  14, 123,
+   24,  28, 121,  26
+] s: Uint8Array(32) [
+  102, 101, 196, 239,  41, 224, 29,  13,
+  144, 104, 154, 106, 179,  67,  6, 237,
+   40, 229,  24,   4, 160,   5,  2, 211,
+  160, 242,  90, 251,  24, 188, 19,  82
+]
+Withdrawal record account: HykEGibL9z19r2HNoxoApMB2nJqUiXPXAeEjf29XyHuT
+Initial program balance: 1
+Initial recipient balance: 0
+Withdrawal successful! Transaction signature: 387SafxiGC9DmDXirwzyJ9jFm8zrxdkqgzLKnRkouR9416Q5uKuDcUHW1t1PCWjuLXKWMHe2ks6ZkgEJAhV9MRmF
+Final program balance: 0.5
+Final recipient balance: 0.5
+Program balance decreased by: 0.5
+Recipient balance increased by: 0.5
+Second withdrawal correctly failed with error: AnchorError thrown in programs/rbx/src/lib.rs:722. Error Code: WithdrawalAlreadyProcessed. Error Number: 6018. Error Message: Withdrawal already processed.
+    ✔ Withdraws tokens with a signature (1534ms)
+Testing native SOL withdrawal...
+Initial user SOL balance: 7.99546208 SOL
+Initial program SOL balance: 2 SOL
+Using Ethereum address bytes: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Wrapped SOL (Solana): So11111111111111111111111111111111111111112
+Trader (Solana): 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+SOL Withdrawal data: {
+  id: 54321,
+  token: PublicKey [PublicKey(So11111111111111111111111111111111111111112)] {
+    _bn: <BN: 69b8857feab8184fb687f634618c035dac439dc1aeb3b5598a0f00000000001>
+  },
+  trader: PublicKey [PublicKey(6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG)] {
+    _bn: <BN: 5349159445d1488b0ce5433e912eeb6550903989c6df25994c8c41d2500087cf>
+  },
+  amount: '1000000000'
+}
+Verifying contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 54321
+Token: So11111111111111111111111111111111111111112
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 1000000000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 069b8857feab8184fb687f634618c035dac439dc1aeb3b5598a0f00000000001
+Trader bytes: 5349159445d1488b0ce5433e912eeb6550903989c6df25994c8c41d2500087cf
+Withdrawal hash: 0x8a97f2536727c26feba6642e78fae524b43cfb206ae8f625b5db7f59d1fe4302
+Final digest to sign: 0xaebc8e4375aa0ed6b0d6152df6658ac7b2b8c8873997af2270728b8e7db92803
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d9888a97f2536727c26feba6642e78fae524b43cfb206ae8f625b5db7f59d1fe4302
+Signature v: 27
+Signature r: 0xd89a3f04f155c23470bbae97a9598c0f1e69a598f0c727b218092b664e4f6112
+Signature s: 0x2f0dbc6089ccd0d959819995d2b4421178000d460c1bb7aa8c3799739645b7a8
+Sol account PDA for withdrawal: 8ehMxXXZthqJHuUkCxpHHLfmpTggPo1zbSd6cMHzRgzc
+SOL withdrawal successful! Transaction signature: 5sky6Fg851bYBc3uTsKuTiHV6yg9gbTyMLWZVTZNwH2D58tpX78uKYXHuCLuNabYhJdENkQwQ9Fbp7HPGcgzUjfS
+Final user SOL balance: 8.99092416 SOL
+Final program SOL balance: 1 SOL
+User SOL increased by: 0.99546208 SOL
+Program SOL decreased by: 1 SOL
+    ✔ Withdraws native SOL with signed EIP712 message (466ms)
+
+Testing get_eip712_verifying_contract function...
+EIP-712 Verifying Contract Address (hex): 0xe158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Program ID: 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE
+Ready to use for EIP-712 domain separator calculation
+    ✔ Gets the EIP-712 verifying contract address
+Testing duplicate token withdrawal prevention...
+Initial user token balance: 49
+Initial program token balance: 0.5
+Using Ethereum address bytes: f39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Withdrawal data: {
+  id: 78910,
+  token: PublicKey [PublicKey(79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3)] {
+    _bn: <BN: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e>
+  },
+  trader: PublicKey [PublicKey(6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG)] {
+    _bn: <BN: 5349159445d1488b0ce5433e912eeb6550903989c6df25994c8c41d2500087cf>
+  },
+  amount: '300000'
+}
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 78910
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 300000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: 5349159445d1488b0ce5433e912eeb6550903989c6df25994c8c41d2500087cf
+Withdrawal hash: 0xf2f6ce1ba8236dafd68a8cf02b4d170046e1cd19bb1d37d68fa5b7d33f669118
+Final digest to sign: 0xc62d655fc2031b49fb76c414cda7d0e100e13be04656c9c481ec2d2ed5ecea06
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d988f2f6ce1ba8236dafd68a8cf02b4d170046e1cd19bb1d37d68fa5b7d33f669118
+Signature v: 28
+Signature r: 0x162830faf6534d874ae8662b340d27be2866bc3c05bcd1ded8b7dbdd25f15404
+Signature s: 0x39780302414c1859826c655614b7675313e3c70ca1e5ffc3fe055ffd00770779
+Withdrawal account PDA: 8f36exK934CpuzufTaumNCjFDM1JA7BYdhrzKFmnrda8
+
+Attempting first withdrawal with ID: 78910
+First withdrawal successful! Transaction signature: 3cyo6Lm7155BowAmPKroatdUNTvMd7YSB6PcEG62Su8ZAc9DChXMLj53XRgGoMbCydMvx5P5924tabH8Wtk8ieps
+User token balance increased by: 0.3
+
+Attempting second withdrawal with SAME ID: 78910
+(This should fail with WithdrawalAlreadyProcessed error)
+Second withdrawal failed as expected with error:
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]
+Program log: Instruction: WithdrawToken
+Program log: AnchorError thrown in programs/rbx/src/lib.rs:722. Error Code: WithdrawalAlreadyProcessed. Error Number: 6018. Error Message: Withdrawal already processed.
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE consumed 20122 of 200000 compute units
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE failed: custom program error: 0x1782
+✅ Test passed: Second withdrawal correctly failed with WithdrawalAlreadyProcessed error
+    ✔ Fails on duplicate withdrawal attempt with same ID (518ms)
+Testing withdrawal with different signer than recipient...
+Recipient (non-signer) created: 5UMhTdWhbx85y6SQpZ6WQye6JZZuq2aabHDiK5VfiowS
+Recipient token account: Hk22X4oVnu4qSgJCtC1tMoyLYgxR3EKBZs9yh4Cori2U
+Ensuring program has enough tokens for proxy withdrawal test...
+Program token balance is low, depositing more tokens...
+Deposited more tokens to program: 4NaD9RNJSK51TbbUDrbXqsysceHhC9ssQftqXfUtGfbHsVrinUMf3EwCwFGu6V8oWE2oq7hjhecLNYqCTsE3heSg
+Initial recipient token balance: 0
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 44444
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: 5UMhTdWhbx85y6SQpZ6WQye6JZZuq2aabHDiK5VfiowS
+Amount: 400000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: 4270d5161f2c4256f08df92abe6b207f4e7a436c91990d4173a5e1587ae09e15
+Withdrawal hash: 0x6105426259c91ec96152a1bf8d270d7f3ea9160790f0ff5709656c7240cdd3dc
+Final digest to sign: 0xa4d734fb94c68237d9372ca4f82de8b1a55f81cb9ea2e47e821d0eff403a699f
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d9886105426259c91ec96152a1bf8d270d7f3ea9160790f0ff5709656c7240cdd3dc
+Signature v: 27
+Signature r: 0x2b666b67cc0717633d4cc3a397057d42a4fe184ba99be0632e4ea9aa49247b71
+Signature s: 0x0f915560077f95754ee8ab9eed171592bb8b2849a9c69697b42acd462d2d8b94
+
+Attempting withdrawal where user signs on behalf of recipient
+Signer: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Recipient: 5UMhTdWhbx85y6SQpZ6WQye6JZZuq2aabHDiK5VfiowS
+Proxy withdrawal successful! Transaction signature: 59rmZGpbjvnLpRKMkf5JrbcaJh6HUHZo6PmNqV7VbCccy35xmVRQSdN2G96jx3eLcE8WrwpBZnxAHJorTUbnC6N5
+Final recipient token balance: 0.4
+Recipient token balance increased by: 0.4
+✅ Test passed: Token withdrawal succeeded with different signer than recipient
+    ✔ Allows a different account to sign for a trader's withdrawal (2475ms)
+Testing SOL withdrawal with different signer than recipient...
+SOL Recipient (non-signer) created: C6D2m3EHLbgd7fMTF189nadHLF2iwkA9546MG3gCJksP
+Initial recipient SOL balance: 0 SOL
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 55555
+Token: So11111111111111111111111111111111111111112
+Trader: C6D2m3EHLbgd7fMTF189nadHLF2iwkA9546MG3gCJksP
+Amount: 500000000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 069b8857feab8184fb687f634618c035dac439dc1aeb3b5598a0f00000000001
+Trader bytes: a4c6101f2a45832b8e022c633408fa183d5fcde4308918881cd056218418242e
+Withdrawal hash: 0xf968a6c3c5f50b18643a155c7efc1af6713f98a25f63636b90b1f7990fc6b11c
+Final digest to sign: 0x24d55654c9fed8e4f72716b637dde3429b73e27d5bb40c7fc1a5c1c762e8b225
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d988f968a6c3c5f50b18643a155c7efc1af6713f98a25f63636b90b1f7990fc6b11c
+Signature v: 27
+Signature r: 0xa52d02e317e25e31730d193f58641247e11e01b110bc82d9dc52ae050500fdca
+Signature s: 0x5960445183d71276d2a80d69ced8ddef1f145364ce89b94ccb5af8542abda7ad
+
+Attempting SOL withdrawal where user signs on behalf of recipient
+Signer: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Recipient: C6D2m3EHLbgd7fMTF189nadHLF2iwkA9546MG3gCJksP
+Proxy SOL withdrawal successful! Transaction signature: 3TghhHrEUKUZ8zN1JZ4yJe637CryfhGR4sZsTJwkF8BAvKqcncm9bvJiJrKRMLBAxfFeyErX3d8wxhtPCHUuGuSP
+Final recipient SOL balance: 0.5 SOL
+Recipient SOL balance increased by: 0.5 SOL
+✅ Test passed: SOL withdrawal succeeded with different signer than recipient
+    ✔ Allows a different account to sign for a trader's SOL withdrawal (492ms)
+Testing signature specificity for withdrawal parameters...
+Alternative token mint created: DfqZ9Gpu9mouTBJJAs6MWhupJ41Qsd5wtXV91nWRVWbV
+Alternative user created: HD4RsLT7XxHMN1s7ajBT8gb84Rs8sE6xKUiCnLRQZkjC
+
+Original withdrawal data for signature:
+ID: 99100
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 200000
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 99100
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 200000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: 5349159445d1488b0ce5433e912eeb6550903989c6df25994c8c41d2500087cf
+Withdrawal hash: 0xe006d00a550bdd1497d46824ee33d94299669b8b1ff35cf5d346cb0550ef5053
+Final digest to sign: 0x7501ec00b489190494f59ce3a2f2238530a41e7e737b9b7ab156c4617cecb1d2
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d988e006d00a550bdd1497d46824ee33d94299669b8b1ff35cf5d346cb0550ef5053
+Signature v: 27
+Signature r: 0x90f0b981ae03cd1cd1081caa43d83971956e550e748f33800c3ab716ccdb3bda
+Signature s: 0x252213ceccd42c8574d52cdbd5b7e274970fe2366069dad60caedaf10c9ff000
+Obtained signature for original withdrawal data
+v: 27
+r: 90f0b981ae03cd1cd1081caa43d83971956e550e748f33800c3ab716ccdb3bda
+s: 252213ceccd42c8574d52cdbd5b7e274970fe2366069dad60caedaf10c9ff000
+
+TEST Withdrawal ID
+ID: 99101
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 200000
+Withdrawal with modified Withdrawal ID failed as expected with error:
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]
+Program log: Instruction: WithdrawToken
+Program 11111111111111111111111111111111 invoke [2]
+Program 11111111111111111111111111111111 success
+Program log: AnchorError thrown in programs/rbx/src/lib.rs:742. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature....
+✅ Test passed: Withdrawal with modified Withdrawal ID correctly failed with signature verification error
+
+TEST Trader Address
+ID: 99100
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: HD4RsLT7XxHMN1s7ajBT8gb84Rs8sE6xKUiCnLRQZkjC
+Amount: 200000
+Withdrawal with modified Trader Address failed as expected with error:
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]
+Program log: Instruction: WithdrawToken
+Program 11111111111111111111111111111111 invoke [2]
+Program 11111111111111111111111111111111 success
+Program log: AnchorError thrown in programs/rbx/src/lib.rs:742. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature....
+✅ Test passed: Withdrawal with modified Trader Address correctly failed with signature verification error
+
+TEST Token Address
+ID: 99100
+Token: DfqZ9Gpu9mouTBJJAs6MWhupJ41Qsd5wtXV91nWRVWbV
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 200000
+Withdrawal with modified Token Address failed as expected with error:
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]
+Program log: Instruction: WithdrawToken
+Program 11111111111111111111111111111111 invoke [2]
+Program 11111111111111111111111111111111 success
+Program log: AnchorError thrown in programs/rbx/src/lib.rs:742. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature....
+✅ Test passed: Withdrawal with modified Token Address correctly failed with signature verification error
+
+TEST Amount
+ID: 99100
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: 6c7UZ1qkjiFwGyYSkEsNNXRXpfVtvx2LNXm44TYV1GjG
+Amount: 210000
+Withdrawal with modified Amount failed as expected with error:
+Program 9yWT9i8kJxY6JFdud9eeWkqtiMTUcDgbSCgF5RD4ihTE invoke [1]
+Program log: Instruction: WithdrawToken
+Program 11111111111111111111111111111111 invoke [2]
+Program 11111111111111111111111111111111 success
+Program log: AnchorError thrown in programs/rbx/src/lib.rs:742. Error Code: InvalidSignature. Error Number: 6001. Error Message: Invalid signature....
+✅ Test passed: Withdrawal with modified Amount correctly failed with signature verification error
+
+✅ All signature specificity tests passed!
+The program correctly rejected all attempts to use a valid signature with modified withdrawal parameters.
+    ✔ Fails when using valid signatures with modified withdrawal data (3054ms)
+
+=== Testing multiple withdrawals in sequence ===
+Multi-withdrawal recipient created: ZSk8uphnvMCVhrmrfQApLwZom2zmJrJrZphQw8WmdZW
+Recipient token account: HQiHkb239yEcq4cga3jfoFCJRz8BrJ9JgU65i1V4yWL
+Ensuring program has enough tokens for multiple withdrawals...
+Program token balance too low, depositing more tokens...
+Deposited 4 tokens to program: 4PM75Mez2PVCbD2kWwcnGTWrLUsUsSR4Fh7McZJGHs4ULxt3nVkojszJFq4cvaweLt36XMYk9nJ3G9AtpEW7uJwB
+Initial program balance: 4.8 tokens
+Initial recipient balance: 0 tokens
+Will perform 3 withdrawals totaling: 2.5 tokens
+
+Performing withdrawal #600000 of 0.5 tokens
+Signing withdrawal data...
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 600000
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: ZSk8uphnvMCVhrmrfQApLwZom2zmJrJrZphQw8WmdZW
+Amount: 500000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: 084fb1c57db5897e27151f49390d47e4f3768c696ecfd827f773478c2117fa7d
+Withdrawal hash: 0xcf596f4402cded31c4c1cea73f9dba14072e6c80d9f79402303f53ae44737572
+Final digest to sign: 0x644ad1773a9c5e80aa238df36c62e7216867e7a0ce2d95b75f31423bd3ef9890
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d988cf596f4402cded31c4c1cea73f9dba14072e6c80d9f79402303f53ae44737572
+Signature v: 27
+Signature r: 0x3de6c243ce7e916a7b8815d31eff288d6352620796e679cf9f5b92b9388c6d96
+Signature s: 0x13777d26260a4c4d0eee6602a7316b5103f984be5776c0f64b1891b7d895c813
+Executing withdrawal transaction...
+Withdrawal transaction successful: 5S6oToaQ2shfDbfGc9LjjW2qRPjJgMFG7Tq9S16gfcxvc94URvfMzCHf6Nschsx193f7RJZkdT2d12bn1rAx4xoH
+Program balance after withdrawal #600000: 4.3 tokens
+Recipient balance after withdrawal #600000: 0.5 tokens
+
+Performing withdrawal #600001 of 0.75 tokens
+Signing withdrawal data...
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 600001
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: ZSk8uphnvMCVhrmrfQApLwZom2zmJrJrZphQw8WmdZW
+Amount: 750000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: 084fb1c57db5897e27151f49390d47e4f3768c696ecfd827f773478c2117fa7d
+Withdrawal hash: 0x1d1e078dd30ea53e66ec7f79ba9111e3c79831b43b0cb5702ba3d920438c1dd4
+Final digest to sign: 0x6fb77d9f0958c4140f638ca2dc72b1a5da3467f94de382dc22a082ccf1253a73
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d9881d1e078dd30ea53e66ec7f79ba9111e3c79831b43b0cb5702ba3d920438c1dd4
+Signature v: 27
+Signature r: 0x4695ba465f30138ef7dae0f4db96c2024f7cf912c07cf33c55db7c2fe84c6fef
+Signature s: 0x01addc8b5df95449416e22a56c7be371ee3928138652faf8e384f87425ff798e
+Executing withdrawal transaction...
+Withdrawal transaction successful: 5TSYve4ns58EFzGqmusn9o8EGG7VHS7T6eq5wmFCjJvmmhoBmuydNFZW3Y3vKRPLShucxU56wQFmayqKk4H3YR32
+Program balance after withdrawal #600001: 3.55 tokens
+Recipient balance after withdrawal #600001: 1.25 tokens
+
+Performing withdrawal #600002 of 1.25 tokens
+Signing withdrawal data...
+Signing withdrawal with following parameters:
+Signing Wallet: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Contract (Solana): GAf2cuBtQG6JbR5PtHaJ2jtaeCpon81ViPJzvwFhUPBV
+Withdrawal ID: 600002
+Token: 79pQdkRM7ehsschPeWbVUmY8Q7brAuZnH4ktwR37amK3
+Trader: ZSk8uphnvMCVhrmrfQApLwZom2zmJrJrZphQw8WmdZW
+Amount: 1250000
+Contract bytes: e158878bb38eb2c410481b4eedcd84fde4b33157f3828ae64fb62ff0081a4ff0
+Withdrawal type hash: 0xa7455edaa60fe3a2ad17bdf90bc6ed660605b7bd459d4aa65e8bd65cb6ed43a1
+Token bytes: 5b685f308bc1716bcd24112163d2cb1c9f5a97bb6251564114634e8e20acd90e
+Trader bytes: 084fb1c57db5897e27151f49390d47e4f3768c696ecfd827f773478c2117fa7d
+Withdrawal hash: 0xf59cf0e214765af7868a6667140f02f7a5d115db805e68bfbae7a8856d8667f3
+Final digest to sign: 0x147dafa8281709e89ed149d6f96a22868773606b7c8f80dbc83171342d31d0d2
+Full message bytes: 0x1901bbba27fb41dc290d60b223ac3911c70311fd207ca29b492dd1b9b7889b33d988f59cf0e214765af7868a6667140f02f7a5d115db805e68bfbae7a8856d8667f3
+Signature v: 27
+Signature r: 0x7bfcc35ecc9b7fd94d35090f526edf258baf26d7d53e47152f640b27b85c0b39
+Signature s: 0x60e28312d6009e9e740106cef2f3890e827d7545627b6f800008ba4ffcb6321f
+Executing withdrawal transaction...
+Withdrawal transaction successful: uWKkVV2xniL1AQxBnnNn1hy7TTkNr8BE3Apr2CtwnGADiMKUbY33j8fX1dDemsDmGFfHY6DGzgc4EYoZ7FpHsdb
+Program balance after withdrawal #600002: 2.3 tokens
+Recipient balance after withdrawal #600002: 2.5 tokens
+
+=== Final Balance Check ===
+Expected program decrease: 2.5 tokens
+Actual program decrease: 2.5 tokens
+Expected recipient increase: 2.5 tokens
+Actual recipient increase: 2.5 tokens
+
+✅ Multiple withdrawals test passed successfully!
+Total withdrawn: 2.5 tokens in 3 transactions
+    ✔ Performs multiple withdrawals across separate transactions (3420ms)
+
+  timelock operations
+New authority public key: E5fEiV4Lh51veE9LisASc5HmiDKAwHCPbMY7G6KdaNJY
+
+<--- Last few GCs --->
+
+[91684:0x138008000]    41300 ms: Scavenge (interleaved) 4075.9 (4085.3) -> 4073.0 (4103.8) MB, pooled: 0 MB, 19.79 / 0.00 ms  (average mu = 0.309, current mu = 0.309) allocation failure; 
+[91684:0x138008000]    44004 ms: Mark-Compact (reduce) 4073.3 (4103.8) -> 4073.1 (4075.8) MB, pooled: 0 MB, 1923.67 / 0.00 ms  (+ 8.5 ms in 0 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 1976 ms) (average mu = 0.310, 
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x104d6ca60 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 2: 0x104f40d98 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 3: 0x10516a3d4 v8::internal::Heap::stack() [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 4: 0x105180ba0 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)::$_1::operator()() const [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 5: 0x10518047c void heap::base::Stack::SetMarkerAndCallbackImpl<v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)::$_1>(heap::base::Stack*, void*, void const*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 6: 0x105b3921c PushAllRegistersAndIterateStack [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 7: 0x10516843c v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 8: 0x1050ef2d4 v8::internal::StackGuard::HandleInterrupts(v8::internal::StackGuard::InterruptLevel) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+ 9: 0x105572290 v8::internal::Runtime_StackGuardWithGap(int, unsigned long*, v8::internal::Isolate*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+10: 0x105c1f9f4 Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+11: 0x10c014484 
+12: 0x10c0124c0 
+13: 0x105b88838 Builtins_InterpreterEntryTrampoline [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+14: 0x105bc5e20 Builtins_AsyncFunctionAwaitResolveClosure [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+15: 0x105c93298 Builtins_PromiseFulfillReactionJob [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+16: 0x105bb5214 Builtins_RunMicrotasks [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+17: 0x105b863f0 Builtins_JSRunMicrotasksEntry [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+18: 0x1050bdd84 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+19: 0x1050be624 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+20: 0x1050be75c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+21: 0x1050ed180 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+22: 0x1050eda24 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+23: 0x105b8a978 Builtins_CallApiCallbackGeneric [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+24: 0x10be776bc 
+25: 0x105b8650c Builtins_JSEntryTrampoline [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+26: 0x105b861b0 Builtins_JSEntry [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+27: 0x1050bddc4 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+28: 0x1050bd724 v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+29: 0x104f58838 v8::Function::Call(v8::Isolate*, v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+30: 0x104c71a80 node::InternalCallbackScope::Close() [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+31: 0x104c71cc4 node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context, v8::Local<v8::Value>) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+32: 0x104c87138 node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+33: 0x104e98578 node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+34: 0x104e99d10 node::EmitToJSStreamListener::OnStreamRead(long, uv_buf_t const&) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+35: 0x104e9e148 node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+36: 0x104e9e890 node::LibuvStreamWrap::ReadStart()::$_1::__invoke(uv_stream_s*, long, uv_buf_t const*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+37: 0x105b727c4 uv__stream_io [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+38: 0x105b7addc uv__io_poll [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+39: 0x105b67750 uv_run [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+40: 0x104c72508 node::SpinEventLoopInternal(node::Environment*) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+41: 0x104db659c node::NodeMainInstance::Run() [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+42: 0x104d2abf0 node::Start(int, char**) [/Users/alexandersumner/.nvm/versions/node/v23.9.0/bin/node]
+43: 0x197027154 start [/usr/lib/dyld]
+thread 'main' panicked at cli/src/lib.rs:3307:55:
+called `Option::unwrap()` on a `None` value
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
